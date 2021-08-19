@@ -1,0 +1,21 @@
+CLASS MACHINE
+  CATEGORY "Windows Explorer Zusatz"
+    POLICY "Navigationsbereich: Bibliotheken ausblenden"
+		  KEYNAME "Software\Classes\CLSID\{031E4825-7B94-4dc3-B131-E946B44C8DD5}\ShellFolder"
+		  VALUENAME Attributes
+		  VALUEON NUMERIC 2962227469
+		  VALUEOFF NUMERIC 2961178893
+    END POLICY
+    POLICY "Navigationsbereich: Netzwerk ausblenden"
+		  KEYNAME "Software\Classes\CLSID\{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}\ShellFolder"
+		  VALUENAME Attributes
+		  VALUEON NUMERIC 2962489444
+		  VALUEOFF NUMERIC 2953052260
+    END POLICY
+    POLICY "Navigationsbereich: Systemsteuerung ausblenden"
+		  KEYNAME "Software\Classes\CLSID\{26EE0668-A00A-44D7-9371-BEB064C98683}\ShellFolder"
+		  VALUENAME Attributes
+		  VALUEON NUMERIC 2693791748
+		  VALUEOFF NUMERIC 2684354564
+    END POLICY
+END CATEGORY
