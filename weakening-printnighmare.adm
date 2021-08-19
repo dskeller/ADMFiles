@@ -1,0 +1,16 @@
+;Configure Point and print driver install as user
+CLASS MACHINE
+CATEGORY "Drucker"
+	POLICY !!policydesc
+		KEYNAME "SOFTWARE\Policies\Microsoft\Windows NT\Printers\PointAndPrint"
+		EXPLAIN !!ExplainWords
+		SUPPORTED !!SupportedOS
+		VALUENAME RestrictDriverInstallationToAdministrators
+		VALUEON NUMERIC 1
+		VALUEOFF NUMERIC 0
+    END POLICY
+END CATEGORY
+[strings]
+policydesc="Point-and-Print Treiberinstallation auf Administratoren einschraenken"
+ExplainWords="Druckertreiber von Point-and-Print-Servern duerfen nur von Administratoren installiert werden."
+SupportedOS="Windows 2000 and above"
